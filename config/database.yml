@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+  database: mybook
+
+#development
+development:
+  <<: *default
+
+
+
+#production
+production:
+  <<: *default
+  username: mybook
+  password: <%= ENV['MYBOOK_DATABASE_PASSWORD'] %>
