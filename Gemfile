@@ -20,3 +20,6 @@ end
 gem 'puma'
 gem 'haml'
 gem 'devise'
+gem 'money-rails'
+gem 'mini_magick'
+gem 'carrierwave'
